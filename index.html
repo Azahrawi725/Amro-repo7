@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+<!--
+  - #SIDEBAR
+-->
+
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure class="avatar-box">
+      <img src="./assets/images/IMG_0809.JPG" alt="Amro A. Zahrawi" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="Amro A. Zahrawi">Amro A. Zahrawi</h1>
+
+      <!-- You can also use: "PhD Candidate | Wind Engineering | CFD (OpenFOAM)" -->
+      <p class="title">Wind Engineer</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+  <div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <a href="mailto:amro.zahrawi@gmail.com" class="contact-link">amro.zahrawi@gmail.com</a>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Phone</p>
+          <a href="tel:+13612280651" class="contact-link">+1 (361) 228-0651</a>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="school-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Affiliation</p>
+          <p class="contact-link">Civil Engineer</p>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+          <address>Baton Rouge, Louisiana, USA</address>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+
+      <!-- LinkedIn -->
+      <li class="social-item">
+        <a href="https://www.linkedin.com/in/amro-zahrawi/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+
+      <!-- Facebook -->
+      <li class="social-item">
+        <a href="https://www.facebook.com/amr.zahrawi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>
+
+      <!-- Twitter / X -->
+      <!-- <li class="social-item"> -->
+     <!--   <a href="https://twitter.com/YOUR-TWITTER-USERNAME" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li> -->
+
+      <!-- Instagram -->
+      <li class="social-item">
+        <a href="https://www.instagram.com/amro.zahrawi7" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications & Presentations</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+<!--
+  - #ABOUT
+-->
+
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    <p>
+      I’m a PhD candidate in Civil Engineering at Louisiana State University (LSU), working with the WISE research team on wind engineering
+      and renewable-energy structures. 
+      My research focuses on wind-induced torsional galloping of single-axis solar trackers—combining
+      high-fidelity CFD modeling and large-scale experimental testing to understand the physics, quantify stability limits, and develop
+      practical mitigation strategies.
+    </p>
+
+    <p>
+      On the computational side, I build and validate OpenFOAM simulations on Linux (dynamic mesh/ALE motion, turbulence modeling, and
+      atmospheric boundary layer inflow setups) to predict aerodynamic loads and aeroelastic response. 
+      In parallel, I design and run wind-tunnel
+      experiments with instrumented tracker sections, process acceleration/rotation measurements, and translate results into design-oriented
+      stability maps and performance metrics. 
+      I also integrate data-driven methods (ML/AI surrogates) to accelerate prediction of instability
+      onset and support safer, more reliable tracker designs for utility-scale agrivoltaics.
+    </p>
+  </section>
+
+  <!--
+    - service
+  -->
+
+  <section class="service">
+
+    <h3 class="h3 service-title">What i'm doing</h3>
+
+    <ul class="service-list">
+
+      <!-- CFD / Simulation -->
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">CFD & Aeroelastic Simulation (OpenFOAM)</h4>
+          <p class="service-item-text">
+            Developing validated OpenFOAM models on Linux to predict wind loads, flow physics, and torsional galloping response of solar trackers
+            using dynamic mesh/ALE motion, turbulence modeling, and ABL inflow setups.
+          </p>
+        </div>
+      </li>
+
+      <!-- Wind-tunnel / Experiments -->
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Wind-Tunnel Experiments & Instrumentation</h4>
+          <p class="service-item-text">
+            Designing and running large-scale aeroelastic tests with instrumented tracker sections, collecting high-rate acceleration/rotation data,
+            and translating results into stability trends, damping behavior, and mitigation performance.
+          </p>
+        </div>
+      </li>
+
+      <!-- Data analysis -->
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Signal Processing & Data Analysis (MATLAB)</h4>
+          <p class="service-item-text">
+            Processing time histories and spectra (filtering, RMS/PSD, frequency-domain characterization) to quantify aerodynamic response and support
+            design-oriented interpretation of CFD and experimental datasets.
+          </p>
+        </div>
+      </li>
+
+      <!-- AI / ML -->
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">AI/ML Surrogate Modeling for Wind Engineering</h4>
+          <p class="service-item-text">
+            Building data-driven surrogate models to accelerate prediction of instability onset and critical conditions, integrating simulation and
+            experimental features to support safer, more reliable solar tracker designs.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+<!--
+  - Team (uses the same modal behavior as the original testimonials section)
+-->
+
+<section class="testimonials" style="margin-top: 18px;">
+
+  <h3 class="h3 testimonials-title">Team</h3>
+
+  <ul class="testimonials-list has-scrollbar">
+    <!-- Husam (bald avatar) -->
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-4.png" alt="Husam Alshunnaq, Ph.D." width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title style="text-align:center;">
+          Husam Alshunnaq, Ph.D.
+        </h4>
+
+        <div class="testimonials-text" data-testimonials-text style="text-align:center;">
+          <p>Ph.D. Alumni — Wind Engineering</p>
+
+          <!-- FULL INFO (shown in modal when clicked) -->
+          <p>
+            <strong>Graduation:</strong> Ph.D., Fall 2025<br>
+            <strong>Status:</strong> Ph.D. Completed (Alumni)<br>
+            <strong>Thesis:</strong> Development of a comprehensive framework for predicting fatigue in wind turbine blades
+            by integrating finite element analysis, experimental testing, and artificial intelligence.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- Binura -->
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Binura J Kudagam" width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title style="text-align:center;">
+          Binura J Kudagam
+        </h4>
+
+        <div class="testimonials-text" data-testimonials-text style="text-align:center;">
+          <p>Ph.D. Candidate — Wind Engineering</p>
+
+          <!-- FULL INFO (shown in modal when clicked) -->
+          <p>
+            <strong>Role:</strong> Ph.D. Candidate, Wind Engineering<br>
+            <strong>Status:</strong> Successfully Passed the Qualifying Exam<br>
+            <strong>Focus:</strong> Advanced wind load analysis and structural response.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- Feng (hat avatar) -->
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-1.png" alt="Feng Xie, P.E." width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title style="text-align:center;">
+          Feng Xie, P.E, Ph.D.
+        </h4>
+
+        <div class="testimonials-text" data-testimonials-text style="text-align:center;">
+          <p>Ph.D. Alumni — Wind/Structural Engineering</p>
+
+          <!-- FULL INFO (shown in modal when clicked) -->
+          <p>
+            <strong>Role:</strong> Ph.D., Wind/Structural Engineering<br>
+            <strong>Status:</strong> Ph.D. Completed (Alumni)<br>
+            <strong>Focus:</strong> Integrating structural analysis with wind engineering solutions.
+          </p>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+
+</section>
+
+
+<!--
+  - testimonials modal (keep this once on the page; it will work for Team too)
+-->
+
+<div class="modal-container" data-modal-container>
+
+  <div class="overlay" data-overlay></div>
+
+  <section class="testimonials-modal">
+
+    <button class="modal-close-btn" data-modal-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/my-avatar.png" alt="Team member" width="80" data-modal-img>
+      </figure>
+
+      <img src="./assets/images/icon-quote.svg" alt="quote icon">
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" data-modal-title>Team member</h4>
+      <time datetime="2026-01-01">WISE Research Team</time>
+
+      <div data-modal-text>
+        <p>
+          Team details will appear here when a card is clicked.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+<!--
+  - collaborations / affiliations (replaces clients)
+-->
+
+<section class="clients" style="margin-top: 18px;">
+
+  <h3 class="h3 clients-title">Collaborations &amp; Affiliations</h3>
+
+  <ul class="clients-list has-scrollbar">
+
+    <!-- LSU -->
+    <li class="clients-item">
+      <a href="https://www.lsu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Louisiana State University">
+        <img
+          src="./assets/images/LSU-Logo.jpg"
+          alt="LSU logo"
+          style="height: 100px; width: auto; object-fit: contain;"
+        >
+      </a>
+    </li>
+
+    <!-- WISE / Aly Lab -->
+    <li class="clients-item">
+      <a href="https://faculty.lsu.edu/aly/index.php" target="_blank" rel="noopener noreferrer" aria-label="WISE Research Team">
+        <img
+          src="./assets/images/WIse.png"
+          alt="WISE Research Team logo"
+          style="height: 100px; width: auto; object-fit: contain;"
+        >
+      </a>
+    </li>
+
+    <!-- OpenFOAM -->
+    <li class="clients-item">
+      <a href="https://www.openfoam.com/" target="_blank" rel="noopener noreferrer" aria-label="OpenFOAM">
+        <img
+          src="./assets/images/OpenFOAM_logo.svg.png"
+          alt="OpenFOAM logo"
+          style="height: 100px; width: auto; object-fit: contain; filter: brightness(0) saturate(100%) invert(86%) sepia(22%) saturate(650%) hue-rotate(2deg) brightness(105%) contrast(95%);"
+        >
+      </a>
+    </li>
+
+  </ul>
+
+</section>
+
+</article>
+
+
+<!--
+  - #RESUME
+-->
+
+<article class="resume" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Louisiana State University (LSU) — Baton Rouge, LA</h4>
+        <span>Jan 2024 — Present</span>
+        <p class="timeline-text">
+          Ph.D. in Civil Engineering (Structural), specializing in wind engineering and computational wind engineering for utility-scale solar infrastructure.
+          Research focuses on wind-induced torsional galloping of single-axis solar trackers using CFD (OpenFOAM), large-scale open-jet wind-tunnel testing,
+          and AI/ML-based load prediction.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">The University of Texas at Tyler (UTT) — Tyler, TX</h4>
+        <span>Aug 2022 — Dec 2023</span>
+        <p class="timeline-text">
+          M.S. in Mechanical Engineering. Thesis: “Design and Implementation of an Optimization Platform for Common Fixed Photovoltaic Systems”
+          (PV configuration/tilt optimization with validation on real-world case studies).
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Jordan University of Science &amp; Technology (JUST) — Irbid, Jordan</h4>
+        <span>Sep 2014 — Jun 2019</span>
+        <p class="timeline-text">
+          B.S. in Mechanical Engineering. Graduation project: “Electrical Vehicle Chassis Design Project” (SOLIDWORKS modeling, load calculations,
+          material selection, prototype fabrication, and testing comparison).
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Graduate Researcher — Wind-Induced Instabilities in Solar Trackers (LSU)</h4>
+        <span>Jan 2024 — Present</span>
+        <p class="timeline-text">
+          Develop and validate OpenFOAM CFD models (ABL inflow, dynamic meshes, 2D/3D cases) to predict wind loads and aeroelastic response of single-axis
+          solar trackers; run parallel simulations on Linux/HPC (mesh sensitivity, convergence, high-Re flows). Design and conduct large-scale open-jet
+          wind-tunnel experiments with instrumented tracker sections; process acceleration/rotation data (PSD/RMS) and evaluate mitigation strategies
+          (edge modifications, damping changes) to reduce torsional galloping risk.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Teaching/Research Assistant — Mechanical Engineering (UT Tyler)</h4>
+        <span>Aug 2022 — Dec 2023</span>
+        <p class="timeline-text">
+          Assisted with undergraduate teaching in math/mechanical engineering (problem-solving sessions, grading) and supported students with SOLIDWORKS
+          and engineering tools. Extended M.S. thesis work toward publication on PV optimization and planning.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Design &amp; Mechanical Engineer Intern — PV Systems (Al-Yarmouk for Energy Solutions)</h4>
+        <span>Jun 2017 — Jan 2018</span>
+        <p class="timeline-text">
+          Designed residential and commercial PV systems (site data collection, load estimation, array/inverter sizing). Used AutoCAD and SketchUp to
+          communicate layouts and participated in multiple PV installations (including commercial projects).
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skill">
+
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <ul class="skills-list content-card">
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">OpenFOAM CFD (RANS/LES, ABL, dynamic mesh)</h5>
+          <data value="90">95%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Linux &amp; HPC (parallel simulations, MPI workflows)</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">MATLAB (signal processing, PSD/RMS, automation)</h5>
+          <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Python (data processing &amp; scripting)</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">CAD (SOLIDWORKS, AutoCAD)</h5>
+          <data value="80">95%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Experimental testing &amp; instrumentation (DAQ, accelerometers)</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Report Writing</h5>
+          <data value="85">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+      
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Microsoft Office </h5>
+          <data value="85">95%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 95%;"></div>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+</article>
+<!-- ==========================
+           PORTFOLIO
+      =========================== -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- Filters -->
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Projects</button></li>
+            <li class="filter-item"><button data-filter-btn>Work Images</button></li>
+            <li class="filter-item"><button data-filter-btn>Broad Impact</button></li>
+          </ul>
+
+          <!-- Mobile dropdown -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Projects</button></li>
+              <li class="select-item"><button data-select-item>Work Images</button></li>
+              <li class="select-item"><button data-select-item>Broad Impact</button></li>
+            </ul>
+          </div>
+
+          <!-- Project Cards -->
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-gallery-open="cfd">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="images-outline"></ion-icon></div>
+                  <img src="./Work_Images/For_portfolio/CFDThumb2.png" alt="CFD Simulation Work" loading="lazy" />
+                </figure>
+                <h3 class="project-title">CFD Simulation Work (OpenFOAM)</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-gallery-open="wind">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="images-outline"></ion-icon></div>
+                  <img src="./Work_Images/For_portfolio/LabWork.jpeg" alt="Wind Tunnel Tests" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Wind-Tunnel Tests &amp; Instrumentation</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="work images">
+              <a href="#" class="project-link" data-gallery-open="analysis">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="analytics-outline"></ion-icon></div>
+                  <img src="./assets/images/project-5.png" alt="Data Analysis" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Signal Processing &amp; Data Analysis</h3>
+                <p class="project-category">Work Images</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="work images">
+              <a href="#" class="project-link" data-gallery-open="ai">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="sparkles-outline"></ion-icon></div>
+                  <img src="./assets/images/project-8.jpg" alt="AI/ML Models" loading="lazy" />
+                </figure>
+                <h3 class="project-title">AI/ML Prediction Models</h3>
+                <p class="project-category">Work Images</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="broad impact">
+              <a href="#" class="project-link" data-gallery-open="agrivoltaics">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="leaf-outline"></ion-icon></div>
+                  <img src="./Work_Images/For_portfolio/Visit2.jpeg" alt="Agrivoltaics Research" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Agrivoltaics: Wind Impact &amp; Reliability</h3>
+                <p class="project-category">Broad Impact</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-gallery-open="simscale">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="cube-outline"></ion-icon></div>
+                  <img src="./assets/images/project-2.png" alt="SimScale" loading="lazy" />
+                </figure>
+                <h3 class="project-title">SimScale Models &amp; Parametric Studies</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- ==========================
+     Portfolio Gallery Modal
+========================== -->
+<div class="portfolio-modal-container" data-portfolio-modal>
+  <div class="portfolio-overlay" data-portfolio-overlay></div>
+
+  <section class="portfolio-modal">
+    <header class="portfolio-modal-header">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%;">
+        <h3 class="h3" data-portfolio-title style="margin:0;">Project Gallery</h3>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <!-- optional CTA button (shown only if gallery has a link) -->
+          <a class="portfolio-cta" data-portfolio-cta href="#" target="_blank" rel="noopener noreferrer" style="display:none;">
+            View Paper
+          </a>
+
+          <button class="portfolio-close-btn" data-portfolio-close aria-label="Close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main viewer -->
+    <div class="portfolio-viewer" data-portfolio-viewer></div>
+
+    <!-- GOLD caption -->
+    <p class="portfolio-caption" data-portfolio-caption></p>
+
+    <!-- Thumbnails -->
+    <ul class="clients-list has-scrollbar" data-portfolio-thumbs></ul>
+  </section>
+</div>
+
+ 
+</article>
+
+<article class="Publications & Presentations" data-page="Publications & Presentations">
+
+  
+  </section>
+
+  <!-- Publications -->
+  <section class="service">
+    <h3 class="h3 service-title">Publications</h3>
+
+    <div class="content-card" style="margin-bottom: 18px;">
+      <h4 class="h4" style="margin-bottom:10px;">Published</h4>
+      <ul style="color: var(--light-gray); line-height:1.7; padding-left:18px;">
+        <li>
+          <b>
+            <a href="https://scholarworks.uttyler.edu/me_grad/26/" target="_blank" rel="noopener noreferrer"
+               style="color: inherit; text-decoration: underline;">
+              M.S. Thesis — Wind/Structural Engineering (Master’s Thesis)
+            </a>
+          </b><br/>
+          <span>Comprehensive graduate thesis focused on wind-structure interaction and renewable-energy structural reliability, including experimental/analytical components and engineering design interpretation.</span>
+        </li>
+
+        <li style="margin-top:10px;">
+          <b>
+            <a href="https://www.mdpi.com/2071-1050/16/18/8271" target="_blank" rel="noopener noreferrer"
+               style="color: inherit; text-decoration: underline;">
+              Agrivoltaics Review — Wind Impact &amp; Reliability (Sustainability/MDPI)
+            </a>
+          </b><br/>
+          <span>Review paper synthesizing agrivoltaics applications, wind loading considerations, wind-induced response mechanisms, and reliability implications for PV systems.</span>
+        </li>
+      </ul>
+    </div>
+
+     <div class="content-card" style="margin-bottom: 18px;">
+      <h4 class="h4" style="margin-bottom:10px;">Under Review / Submitted</h4>
+      <ul style="color: var(--light-gray); line-height:1.7; padding-left:18px;">
+        <li>
+          <b>Aeroelastic Characterization of Solar Trackers Torsional Galloping Through CFD Modeling in OpenFOAM (Submitted)</b><br/>
+          <span>
+            Develops and validates an OpenFOAM v24.06 CFD framework (ALE + WALE LES) to predict torsional galloping onset for a 2D single-axis tracker section (Port Allen, LA reference).
+            Presents stability diagrams vs tilt, and quantifies mitigation via stiffness, damping (ζ = 0.1–0.25), and aerodynamic edge modifications—showing up to 81.8% delay in instability and >60% amplitude reduction when combined.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-card" style="margin-bottom: 18px;">
+      <h4 class="h4" style="margin-bottom:10px;">Draft Papers / Ready to Submit</h4>
+      <ul style="color: var(--light-gray); line-height:1.7; padding-left:18px;">
+        <li>
+          <b>Wind-Induced Torsional Galloping of Solar Panels: Large-Scale Experimental Tests and Mitigation Strategies</b><br/>
+          <span>
+            Reports large-scale experimental testing of wind-induced torsional galloping with synchronized sensing (e.g., accelerometers/video tracking) to quantify onset, amplitudes, and damping behavior.
+            Evaluates practical mitigation strategies and provides design-ready recommendations for safer, more reliable PV structures under extreme wind.
+          </span>
+        </li>
+
+        <li style="margin-top:10px;">
+          <b>Realistic ABL Turbulence Inflow Using a Vortex Method for CFD Prediction of Solar Tracker Galloping and Control Strategies</b><br/>
+          <span>
+            Introduces a vortex-method turbulence inflow for realistic ABL profiles in CFD, targeting reduced turbulence decay and improved agreement with wind-tunnel/lab profiles.
+            Demonstrates how improved inflow fidelity strengthens galloping prediction and mitigation assessment for tracker configurations.
+          </span>
+        </li>
+
+        <li style="margin-top:10px;">
+          <b>Developing an AI-Based Predictive Model for Solar Tracker Stability with a Comparison with a SimScale Model</b><br/>
+          <span>
+            Builds an AI-driven stability predictor trained on CFD/experimental features to rapidly estimate galloping risk across tilt, wind speed, and structural parameters.
+            Benchmarks predictions against a SimScale-based model to compare accuracy, generalization, and practical workflow speed for engineering use.
+          </span>
+        </li>
+
+        <li style="margin-top:10px;">
+          <b>Design And Implementation of An Optimization Platform for Common Fixed Photovoltaic Systems</b><br/>
+          <span>
+            Develops an optimization platform to improve fixed PV system performance and reliability by coupling design constraints with parametric evaluation and decision metrics.
+            Provides an end-to-end workflow for screening configurations and guiding design choices with repeatable, engineering-friendly outputs.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+
+  <!-- Presentations -->
+  <section class="service">
+    <h3 class="h3 service-title">Presentations</h3>
+
+
+    <div class="content-card">
+      <ul style="color: var(--light-gray); line-height:1.7; padding-left:18px;">
+        <li><b>PhD Qualifying Exam</b> — Research proposal, methods, and committee Q&amp;A.</li>
+        <li><b>PhD General Exam</b> — Progress update, validation status, and roadmap.</li>
+        <li><b>ETRC Research Competition</b> — <b>3rd Place</b>; technical pitch + results summary.</li>
+        <li><b>LSU Graduate School Research Competition</b> — Participant; research communication format.</li>
+        <li><b>Civil Engineering Department Research Competition</b> — Participant; department-level presentation.</li>
+        <li><b>Department of Energy (DOE) Presentation</b> — Participant; research scope + outcomes aligned with energy reliability.</li>
+      </ul>
+      <!-- Presentations Photos -->
+
+<section class="service" style="margin-top: 25px;">
+  <h3 class="h3 service-title">Presentation Photos</h3>
+
+  <!-- GRID -->
+  <div class="pres-photo-grid">
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/COE1.jpg"
+         data-pres-caption="College of Engineering presentation (1)">
+        <img src="./Work_Images/For_portfolio/COE1.jpg" alt="College of Engineering presentation (1)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">College of Engineering presentation (1)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/COE2.jpg"
+         data-pres-caption="College of Engineering — group photo (2)">
+        <img src="./Work_Images/For_portfolio/COE2.jpg" alt="College of Engineering — group photo (2)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">College of Engineering — group photo (2)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/COE3.jpg"
+         data-pres-caption="College of Engineering presentation (3)">
+        <img src="./Work_Images/For_portfolio/COE3.jpg" alt="College of Engineering presentation (3)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">College of Engineering presentation (3)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/ETRC1.jpg"
+         data-pres-caption="ERTC Research Competition — event photo (1)">
+        <img src="./Work_Images/For_portfolio/ETRC1.jpg" alt="ERTC Research Competition — event photo (1)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">ERTC Research Competition — event photo (1)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/ETRC2.jpg"
+         data-pres-caption="ERTC Research Competition — group photo (2)">
+        <img src="./Work_Images/For_portfolio/ETRC2.jpg" alt="ERTC Research Competition — group photo (2)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">ERTC Research Competition — group photo (2)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/ETRC3.jpg"
+         data-pres-caption="ERTC Research Competition — presentation (3)">
+        <img src="./Work_Images/For_portfolio/ETRC3.jpg" alt="ERTC Research Competition — presentation (3)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">ERTC Research Competition — presentation (3)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/ETRC4.jfif"
+         data-pres-caption="ERTC Research Competition — award / showcase (4)">
+        <img src="./Work_Images/For_portfolio/ETRC4.jfif" alt="ERTC Research Competition — award / showcase (4)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">ERTC Research Competition — award / showcase (4)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/GRC1.JPG"
+         data-pres-caption="LSU Graduate School Research Competition (1)">
+        <img src="./Work_Images/For_portfolio/GRC1.JPG" alt="LSU Graduate School Research Competition (1)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">LSU Graduate School Research Competition (1)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/GRC2.JPG"
+         data-pres-caption="LSU Graduate School Research Competition (2)">
+        <img src="./Work_Images/For_portfolio/GRC2.JPG" alt="LSU Graduate School Research Competition (2)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">LSU Graduate School Research Competition (2)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/MasterExp1.jpg"
+         data-pres-caption="Master’s thesis experiments — setup (1)">
+        <img src="./Work_Images/For_portfolio/MasterExp1.jpg" alt="Master’s thesis experiments — setup (1)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Master’s thesis experiments — setup (1)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/MasterExp2.jpg"
+         data-pres-caption="Master’s thesis experiments — setup (2)">
+        <img src="./Work_Images/For_portfolio/MasterExp2.jpg" alt="Master’s thesis experiments — setup (2)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Master’s thesis experiments — setup (2)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/MasterExp3.jpg"
+         data-pres-caption="Master’s thesis experiments — setup (3)">
+        <img src="./Work_Images/For_portfolio/MasterExp3.jpg" alt="Master’s thesis experiments — setup (3)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Master’s thesis experiments — setup (3)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/MasterTh1.JPG"
+         data-pres-caption="Master’s thesis presentation (1)">
+        <img src="./Work_Images/For_portfolio/MasterTh1.JPG" alt="Master’s thesis presentation (1)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Master’s thesis presentation (1)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/MasterTh2.JPG"
+         data-pres-caption="Master’s thesis presentation (2)">
+        <img src="./Work_Images/For_portfolio/MasterTh2.JPG" alt="Master’s thesis presentation (2)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Master’s thesis presentation (2)</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/PhdGen.JPG"
+         data-pres-caption="PhD general / research presentation">
+        <img src="./Work_Images/For_portfolio/PhdGen.JPG" alt="PhD general / research presentation" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">PhD general / research presentation</p>
+    </div>
+
+    <div class="pres-photo-card">
+      <a href="#"
+         class="pres-photo-link"
+         data-pres-src="./Work_Images/For_portfolio/Present1.JPG"
+         data-pres-caption="Research results snapshot (meeting / talk)">
+        <img src="./Work_Images/For_portfolio/Present1.JPG" alt="Research results snapshot (meeting / talk)" loading="lazy">
+      </a>
+      <p class="pres-photo-cap">Research results snapshot (meeting / talk)</p>
+    </div>
+
+  </div><!-- /pres-photo-grid -->
+</section>
+
+<!-- ==========================
+     Presentation Photo Modal
+========================== -->
+<div class="pres-modal-container" data-pres-modal>
+  <div class="pres-overlay" data-pres-overlay></div>
+
+  <section class="pres-modal" role="dialog" aria-modal="true" aria-label="Presentation photo viewer">
+    <button class="pres-close-btn" type="button" data-pres-close aria-label="Close">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <figure class="pres-modal-figure">
+      <img class="pres-modal-img" data-pres-img src="" alt="">
+    </figure>
+
+    <p class="pres-modal-caption" data-pres-caption></p>
+  </section>
+</div>
+
+  <!-- ==========================
+     Presentation Photo Modal
+========================== -->
+<div class="pres-modal-container" data-pres-modal>
+  <div class="pres-overlay" data-pres-overlay></div>
+
+  <section class="pres-modal" role="dialog" aria-modal="true" aria-label="Presentation photo viewer">
+    <button class="pres-close-btn" type="button" data-pres-close aria-label="Close">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <figure class="pres-modal-figure">
+      <img class="pres-modal-img" data-pres-img src="" alt="">
+    </figure>
+
+    <p class="pres-modal-caption" data-pres-caption></p>
+  </section>
+</div>
+
+</article>
+
+
+
+
+<!--
+  - #CONTACT
+-->
+
+<article class="contact" data-page="contact">
+
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <!-- Map -->
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <!-- Baton Rouge, Louisiana -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.624410144453!2d-91.190018!3d30.413257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a6a39b0b4d1d%3A0x9c62c8c17e4d9b6e!2sBaton%20Rouge%2C%20LA!5e0!3m2!1sen!2sus!4v1730000000000"
+        width="400"
+        height="300"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </figure>
+  </section>
+
+  <!-- Contact info under the map (Email then Phone) -->
+  <section class="contact-info" style="margin-top: 18px;">
+    <ul class="contacts-list" style="margin: 0;">
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <a href="mailto:amro.zahrawi@gmail.com" class="contact-link">amro.zahrawi@gmail.com</a>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Phone</p>
+          <a href="tel:+13612280651" class="contact-link">+1 (361) 228-0651</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- Form (sends via mailto to your email) -->
+  <section class="contact-form">
+
+    <h3 class="h3 form-title">Send me a message</h3>
+
+    <form
+      class="form"
+      action="mailto:amro.zahrawi@gmail.com"
+      method="post"
+      enctype="text/plain"
+      data-form>
+
+      <div class="input-wrapper">
+        <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+      <button class="form-btn" type="submit" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+
+    </form>
+
+  </section>
+
+</article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
