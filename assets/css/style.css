@@ -2176,4 +2176,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-top: 12px;
   line-height: 1.35;
 }
+/* iOS fallback for backdrop-filter */
+@supports (-webkit-touch-callout: none) {
+  .icon-box {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
 
